@@ -5,22 +5,22 @@ proposal
 
 ### Group Members
 
-\[Xinying Zou，xz3593\], \[Chen Li，cl4946\], \[Rachel Liu，rl3721\],
-\[Fan Bu，fb2731\], \[Yihui Luo, yl6378\]
+\[Name, UNI\], \[Name, UNI\], \[ChenLi, cl4946\], \[Name, UNI\], \[Name,
+UNI\]
 
 ### Motivation
 
-Food safety is an important consideration for New York City diners,
-especially in areas with a high concentration of restaurants, such as
-Manhattan. While restaurant letter grades provide a convenient way to
-assess food safety, they do not fully capture the nature and severity of
-violations identified during inspections. Restaurants with the same
-letter grade may have different inspection scores and records of
-critical violations. Using publicly available NYC restaurant inspection
-data, our project aims to examine how critical violations vary across
-neighborhoods and among restaurants receiving the same grade. We hope to
-provide a more detailed understanding of restaurant inspection outcomes
-and help diners make more informed decisions.
+Since the semester began, many students in Manhattan, particularly near
+Columbia University, have reported gastrointestinal illness after eating
+at restaurants along 116th Street, and concerns have also been raised
+about campus dining. Letter grades are the main food safety signal
+available to diners, but they reveal little about the types or severity
+of the violations behind them. Using NYC restaurant inspection data in
+R, we examine whether critical food safety violations are common across
+Manhattan and other neighborhoods, and whether restaurants with the same
+letter grade differ in meaningful ways. Our goal is to give diners a
+clearer and more accessible picture of inspection outcomes and to
+identify safer options for lunch.
 
 ### Research Questions
 
