@@ -96,13 +96,16 @@ filters for borough, cuisine, and grade. Large data files will be kept
 outside GitHub, with reproducible download and cleaning instructions
 provided.
 
-Planned Timeline - **November 13–20:** Adding the data to GitHub
+### Planned Timeline
+- **November 13–20:** Adding the data to GitHub
 repository, meet with the teaching team and check the feasibility of our
-plan, confirm the challenge part and divide the work. - **November
-21–27:** Consolidate inspection records, and conduct preliminary
-exploratory analyses. - **November 28–December 4:** Complete geographic
+plan, confirm the challenge part and divide the work. 
+- **November 21–27:** Consolidate inspection records, and conduct preliminary
+exploratory analyses. 
+- **November 28–December 4:** Complete geographic
 and within-grade analyses, develop the interactive map and restaurant
-comparison tool. - **December 5–9:** Integrate visualizations, complete
-the written report, and finalize the project website. - **December
-10–12:** Test interactive features, review reproducibility, record the
+comparison tool. 
+- **December 5–9:** Integrate visualizations, complete
+the written report, and finalize the project website. 
+- **December 10–12:** Test interactive features, review reproducibility, record the
 screencast, and submit
