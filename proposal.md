@@ -5,7 +5,7 @@ proposal
 
 ### Group Members
 
-\[Name, UNI\], \[Name, UNI\], \[Name, UNI\], \[Name, UNI\], \[Name,
+\[Name, UNI\], \[Name, UNI\], \[Chen Li, cl4946\], \[Name, UNI\], \[Name,
 UNI\]
 
 ### Motivation
