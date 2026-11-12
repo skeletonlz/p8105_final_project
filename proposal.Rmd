@@ -34,7 +34,7 @@ We will use the publicly available [NYC Department of Health and Mental Hygiene 
 Key coding challenges include converting inspection dates from text to date format, excluding placeholder dates such as 01/01/1900, and consolidating multiple violation records into one record per inspection without double-counting scores. We will distinguish inspection types and define a consistent rule for selecting each restaurant’s most recent eligible graded inspection. We will also distinguish inspections explicitly reporting no violations from records with missing information. For mapping, we will validate coordinates, document exclusions due to missing locations, and create an interactive map with filters for borough, cuisine, and grade. Large data files will be kept outside GitHub, with reproducible download and cleaning instructions provided.
 
 
-Planned Timeline
+### Planned Timeline 
 - **November 13–20:** Adding the data to GitHub repository, meet with the teaching team and check the feasibility of our plan, confirm the challenge part and divide the work.
 - **November 21–27:** Consolidate inspection records, and conduct preliminary exploratory analyses.
 - **November 28–December 4:** Complete geographic and within-grade analyses, develop the interactive map and restaurant comparison tool.
