@@ -1,100 +1,77 @@
-proposal
+What’s Behind the Grade?
 ================
-
-# Violations Across NYC Restaurants
+P8105 Final Project Group
 
 ### Group Members
 
-\[Xinying Zou，xz3593\], \[Chen Li，cl4946\], \[Rachel Liu，rl3721\],
-\[Fan Bu，fb2731\], \[Yihui Luo, yl6378\]
+Xinying Zou (xz3593) · Chen Li (cl4946) · Rachel Liu (rl3721) · Fan Bu
+(fb2731) · Yihui Luo (yl6378)
 
 ### Motivation
 
-Food safety is an important consideration for New York City diners,
-especially in areas with a high concentration of restaurants, such as
-Manhattan. While restaurant letter grades provide a convenient way to
-assess food safety, they do not fully capture the nature and severity of
-violations identified during inspections. Restaurants with the same
-letter grade may have different inspection scores and records of
-critical violations. Using publicly available NYC restaurant inspection
-data, our project aims to examine how critical violations vary across
-neighborhoods and among restaurants receiving the same grade. We hope to
-provide a more detailed understanding of restaurant inspection outcomes
-and help diners make more informed decisions.
+NYC restaurant letter grades offer diners a quick summary of inspection
+outcomes, but they do not show which violations were recorded. Even
+restaurants with the same grade can differ in inspection scores and
+critical violations. We will examine how critical violations vary across
+NYC neighborhoods and what diners can learn by comparing restaurants
+within the same grade.
 
 ### Research Questions
 
-1.  How does the proportion of restaurants with critical violations
-    differ across NYC neighborhoods and boroughs?
-2.  How do critical violation patterns and inspection scores vary among
-    restaurants receiving the same letter grade?
-3.  What are the most frequently reported types of critical violations,
-    and how do their distributions vary across geographic areas?
+1.  How does the proportion of restaurants with at least one critical
+    violation differ across neighborhoods and boroughs?
+2.  How do inspection scores and critical violations differ among
+    restaurants with the same letter grade?
+3.  Which types of critical violations are most common, and do their
+    patterns vary by location?
 
 ### Intended Final Products
 
-We plan to develop an interactive project website featuring a geographic
-visualization of critical violation patterns and a side-by-side
-restaurant comparison tool. Users will be able to explore
-neighborhood-level differences and compare two restaurants based on
-their inspection grades, scores, and recorded violations. The website
-will also include exploratory visualizations, a comprehensive
-reproducible report, and a two-minute narrated screencast.
+We will create a project website with an interactive map of inspection
+outcomes and a side-by-side tool for comparing two restaurants’ grades,
+scores, and cited violations. The website will also feature a
+reproducible report, supporting visualizations, and a two-minute
+narrated screencast.
 
-### Anticipated Data Sources
+### Anticipated Data Source
 
-We will use the publicly available [NYC Department of Health and Mental
-Hygiene Restaurant Inspection
-Results](https://data.cityofnewyork.us/d/43nn-pn8j) dataset from NYC
-Open Data. The dataset contains restaurant identifiers, geographic
-information, inspection dates and types, letter grades, inspection
-scores, and violation details, including indicators of critical
-violations.
+We will use the public [NYC DOHMH Restaurant Inspection
+Results](https://data.cityofnewyork.us/d/43nn-pn8j) dataset, which
+includes restaurant identifiers, inspection dates, grades, scores,
+violation descriptions, critical-violation flags, and location
+information.
 
 ### Planned Analyses and Visualizations
 
-- **Exploratory Data Analysis:** Report how many restaurants have at
-  least one critical violation at their most recent graded inspection,
-  and examine the distributions of grades, scores, and critical
-  violations overall and by borough. We will document how many
-  restaurants are excluded for lacking a grade or valid location.
-- **Geographic Analysis:** Use leaflet to build an interactive map in
-  which each restaurant is a circle marker colored by its inspection
-  score or critical violation status, in the same way we colored Airbnb
-  listings by review score. We will add a neighborhood layer based on
-  the NTA codes in the data, showing the percentage of restaurants with
-  at least one critical violation together with restaurant counts.
-  Neighborhoods with very few restaurants will be flagged or merged. We
-  will examine Manhattan in detail, including the area around 116th
-  Street.
-- **Within-Grade Comparisons:** Use plotly to create interactive
-  boxplots and scatter plots of inspection scores and critical violation
-  rates among restaurants with the same letter grade, with hover text
-  showing the restaurant name, grade, score, and violation count.
-  Summary tables will accompany the plots.
-- **Violation Pattern Analysis:** Group violation descriptions into
-  broader categories, such as temperature control, vermin, and hygiene
-  practices, and compare their frequencies across boroughs and
-  neighborhoods using interactive bar charts.
-- **Interactive Comparison:** Allow users to select two restaurants and
-  view their most recent inspection date, grade, score, and cited
-  violations side by side. This tool will also help identify safer lunch
-  options in areas of interest.
+- **Data preparation and EDA:** Combine violation-level rows into
+  inspection-level records; select each restaurant’s most recent
+  eligible graded inspection; summarize grade, score, and
+  critical-violation distributions.
+- **Geographic patterns:** Use `leaflet` to map restaurants and display
+  neighborhood-level percentages of restaurants with critical
+  violations, alongside restaurant counts. We will use borough-level
+  summaries if neighborhood samples are too small.
+- **Within-grade comparisons:** Use `ggplot2` or `plotly` to compare
+  scores and critical-violation patterns among restaurants with the same
+  grade.
+- **Violation types and restaurant comparison:** Summarize common
+  critical violations by area and allow users to compare two
+  restaurants’ inspection records side by side.
 
 ### Coding Challenges
 
-Key coding challenges include converting inspection dates from text to
-date format, excluding placeholder dates such as 01/01/1900, and
-consolidating multiple violation records into one record per inspection
-without double-counting scores. We will distinguish inspection types and
-define a consistent rule for selecting each restaurant’s most recent
-eligible graded inspection. We will also distinguish inspections
-explicitly reporting no violations from records with missing
-information. For mapping, we will validate coordinates, document
-exclusions due to missing locations, and create an interactive map with
-filters for borough, cuisine, and grade. Large data files will be kept
-outside GitHub, with reproducible download and cleaning instructions
-provided.
+\<\<\<\<\<\<\< HEAD Key coding challenges include converting inspection
+dates from text to date format, excluding placeholder dates such as
+01/01/1900, and consolidating multiple violation records into one record
+per inspection without double-counting scores. We will distinguish
+inspection types and define a consistent rule for selecting each
+restaurant’s most recent eligible graded inspection. We will also
+distinguish inspections explicitly reporting no violations from records
+with missing information. For mapping, we will validate coordinates,
+document exclusions due to missing locations, and create an interactive
+map with filters for borough, cuisine, and grade. Large data files will
+be kept outside GitHub, with reproducible download and cleaning
+instructions provided.
 
 ### Planned Timeline
 
@@ -109,3 +86,22 @@ provided.
   report, and finalize the project website.
 - **December 10–12:** Test interactive features, review reproducibility,
   record the screencast, and submit
+
+We will avoid double-counting violations from the same inspection,
+distinguish restaurants using unique IDs, handle missing grades and
+locations, and check whether neighborhood boundaries can be matched
+reliably. Building a responsive interactive map and restaurant
+comparison tool will be an additional challenge. We will document
+exclusions and maintain a reproducible data-cleaning workflow.
+
+### Planned Timeline
+
+- **Nov 13–20:** Finalize scope, meet with the teaching team, and assess
+  data quality.
+- **Nov 21–27:** Clean and consolidate inspection records; complete
+  initial EDA.
+- **Nov 28–Dec 4:** Build visualizations, the map, and the restaurant
+  comparison tool.
+- **Dec 5–9:** Draft the report and integrate the project website.
+- **Dec 10–12:** Test features, check reproducibility, record the
+  screencast, and submit.
