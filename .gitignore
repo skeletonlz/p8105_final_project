@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# Keep raw CSV data local
+/data/*.csv
+/data/*.CSV
