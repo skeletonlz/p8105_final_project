@@ -60,8 +60,7 @@ information.
 
 ### Coding Challenges
 
-\<\<\<\<\<\<\< HEAD Key coding challenges include converting inspection
-dates from text to date format, excluding placeholder dates such as
+Key coding challenges include converting inspection dates from text to date format, excluding placeholder dates such as
 01/01/1900, and consolidating multiple violation records into one record
 per inspection without double-counting scores. We will distinguish
 inspection types and define a consistent rule for selecting each
