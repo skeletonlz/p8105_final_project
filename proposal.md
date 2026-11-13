@@ -100,15 +100,3 @@ locations, and check whether neighborhood boundaries can be matched
 reliably. Building a responsive interactive map and restaurant
 comparison tool will be an additional challenge. We will document
 exclusions and maintain a reproducible data-cleaning workflow.
-
-### Planned Timeline
-
-- **Nov 13–20:** Finalize scope, meet with the teaching team, and assess
-  data quality.
-- **Nov 21–27:** Clean and consolidate inspection records; complete
-  initial EDA.
-- **Nov 28–Dec 4:** Build visualizations, the map, and the restaurant
-  comparison tool.
-- **Dec 5–9:** Draft the report and integrate the project website.
-- **Dec 10–12:** Test features, check reproducibility, record the
-  screencast, and submit.
