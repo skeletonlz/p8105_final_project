@@ -13,7 +13,8 @@ Xinying Zou (xz3593) · Chen Li (cl4946) · Rachel Liu (rl3721) · Fan Bu (fb273
 
 ### Motivation
 
-NYC restaurant letter grades offer diners a quick summary of inspection outcomes, but they do not show which violations were recorded. Even restaurants with the same grade can differ in inspection scores and critical violations. We will examine how critical violations vary across NYC neighborhoods and what diners can learn by comparing restaurants within the same grade.
+We started this project with the idea of looking at New York City restaurant health grades alongside the specific inspection records to see what kind of reference information this can provide for diners. When several restaurants receive the same grade, are the health issues cited in their inspections also similar? If there are differences, which ones are worth diners looking into further? We also wanted to know whether similar health issues are equally common in different neighborhoods across New York City.
+Letter grades are information that diners can easily see and understand, so we wanted to use them as a starting point to help diners make sense of the inspection records behind the grades. We created this project in the hope that when choosing a restaurant, people can use the grade to quickly understand the inspection results, and, when needed, understand exactly what issues the inspectors found.
 
 ### Research Questions
 
@@ -37,7 +38,7 @@ We will use the public [NYC DOHMH Restaurant Inspection Results](https://data.ci
 - **Violation types and restaurant comparison:** Summarize common critical violations by area and allow users to compare two restaurants' inspection records side by side.
 
 ### Coding Challenges
-<<<<<<< HEAD
+
 Key coding challenges include converting inspection dates from text to date format, excluding placeholder dates such as 01/01/1900, and consolidating multiple violation records into one record per inspection without double-counting scores. We will distinguish inspection types and define a consistent rule for selecting each restaurant’s most recent eligible graded inspection. We will also distinguish inspections explicitly reporting no violations from records with missing information. For mapping, we will validate coordinates, document exclusions due to missing locations, and create an interactive map with filters for borough, cuisine, and grade. Large data files will be kept outside GitHub, with reproducible download and cleaning instructions provided.
 
 
